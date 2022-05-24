@@ -1,0 +1,94 @@
+.calculator
+{
+    height: 370px;
+    width: 250px;
+    border: 1px solid rgb(129, 125, 125);
+    border-radius: 5%;
+     box-shadow: 4px 4px 40px 5px ;
+    padding: 20px;
+    background-color: rgb(206, 205, 205);
+}
+.calculator .screen
+{
+    height: 50px;
+    border: 2px solid rgb(10, 228, 101);
+    background-color:darkgreen;
+    display:flex;
+    justify-content: right;
+    align-items:flex-end;
+    padding: 5px 10px;
+    font-size: 2rem;
+    color:rgb(245, 211, 125);
+}
+.calculator .keypad
+{
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+.calculator .keypad .keys
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.calculator .keypad .sptop
+{
+    display:flex;
+    justify-content:right;
+    margin-bottom: 5px;
+}
+.sp{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+   
+}
+
+.keys button{
+    font-size: 1.2rem;
+    margin: 2px;
+    border-radius: 10%;
+    border-color: aliceblue;
+}
+.keys button:hover
+{
+    background-color:blueviolet;
+    border-color: aliceblue;
+    color:white;
+}
+.sp button
+{
+    font-size: 1.1rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: aliceblue;
+    color:aliceblue;
+    background-color: black;
+}
+.sptop button{
+    font-size: 1.1rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: aliceblue;
+    color:aliceblue;
+    background-color: black;
+}
+.sp button:hover{
+    color:rgb(254, 249, 250);
+    background-color: red;
+}
+.sptop button:hover{
+    color:crimson
+}
+button:active{
+    transform: scale(0.9);
+}
+body{
+    display:flex;
+    border: 1px solid black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right,rgb(224, 175, 175),rgb(60, 60, 114),black);
+    /* background:url(./download.jpg); */
+}
